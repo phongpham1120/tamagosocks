@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>München Tour Guide</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type ="text/css" href="indexstyle.css"/>
+
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css"/><!--tab-->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><!--hide-->
+
+		<script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+		<script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
+
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"> 
+    	</script> 
+    	<script src="js/pull.js"> 
+    	</script> 
+		<script>
+			$(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if(scroll >300){
+            $('.centernav').css('opacity', '1');
+        } else{
+            $('.centernav').css('opacity', '0.1');
+        }
+    });
+		</script><!--fade in logo-->
+
+		<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/dropcap.min.js"></script><!--dropcap-->
+
+	</head>
+	<body>
+		<div class="canvas">
+			<header id="home">
+				<div class="navbar" id="navbar">
+					<div class="centernavipad">
+							<a href="#" class="centerlogo"><img src="img/logo.png" class="logo2"></a>
+						</div>
+					<nav class="innernav">
+						<div class="leftnav">
+							<a href="#welcome">Welcome</a>
+							<a href="#attraction">Attraction</a>
+							<a href="#activity">Activity</a>
+						</div>
+						<div class="centernav">
+							<a href="#" class="centerlogo"><img src="img/logo.png" class="logo"></a>
+						</div>
+						<div class="rightnav">
+							<a href="#cuisine">Cuisine</a>
+							<a href="#accomodation">Accomodation</a>
+							<a href="#contact">Contact</a>
+						</div>
+					</nav>
+
+					<nav class="innernavipad">
+							<a href="#welcome">Welcome</a>
+							<a href="#attraction">Attraction</a>
+							<a href="#activity">Activity</a>
+							<a href="#cuisine">Cuisine</a>
+							<a href="#accomodation">Accomodation</a>
+							<a href="#contact">Contact</a>
+					</nav>
+
+				</div>
+
+				<button class="menuicon" onclick="this.classList.toggle('active')">
+					<div class="bar"></div>
+					<div class="bar"></div>
+					<div class="bar"></div>
+				</button>
+
+				<nav class="innernaviphone">
+					<ul>
+						<li class="hidee"><a href="#welcome">Welcome</a></li>
+						<li class="hidee"><a href="#attraction">Attraction</a></li>
+						<li class="hidee"><a href="#activity">Activity</a></li>
+						<li class="hidee"><a href="#cuisine">Cuisine</a></li>
+						<li class="hidee"><a href="#accomodation">Accomodation</a></li>
+						<li class="hidee"><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+
+				<div class="homewrap">
+					<div class="middle"></div>
+
+				</div>
+				<div class="homecontent">
+					<a href="#welcome"><span class="scroll"></span></a>
+				</div>
+			</header>
+			<main>
+				<section id="welcome">
+					<div class="container_12">
+						<div class="grid_12">
+							<h2>Welcome to<br><b>München</b></h2>
+							<h4>Where happiness is <br class="show680">always in style</h4>
+						</div>
+						<div class="clear"></div>
+						<div class="welcomecontent">
+							<div class="grid_8 prefix_2">
+								<p><span id="dropcap">L</span>ocated at the Isar river, München is the capital city of Bavaria, the second largest state of Germany. However, the cultures and arts that it bears is second to none in this country. Though having been damaged in World War II, the city rises from the ashes and enhanced its beauty with picturesque sceneries and historical buildings. München is the everlasting proof of the Germans' bold characteristics: determined, strong and indestructible. </p>
+							</div>
+							<div class="clear"></div>
+							<div class="grid_8 prefix_2">
+								<p>Aside from its historical and cultural side, München is also known for its being an international center of business, engineering and communication. In fact, München's ability to maintain both its cultural heritage side and its immensely developing technological side has gained the city its reputation as a city of "laptop and lederhosen".</p>
+							</div>
+							<div class="clear"></div>
+							<div class="grid_8 prefix_2">
+								<p>München is home to many world records such as the world's oldest cinema, the world's largest pub or the world’s biggest technology and science museum. Not only that, visitors can also engage in abundant fun and pleasurable activities such as surfing at the Eisbach Canal or going shopping at the Farmers' all-organic market.</p>
+							</div>
+							<div class="clear"></div>
+							<div class="grid_5 prefix_4 wel3">
+								<blockquote>The possibilities <br>of finding <u>joy</u> in München are <i>endless.</i></blockquote>
+							</div>
+
+							<div class="quoteipad">
+								<div class="wel4">
+									<blockquote>The possibilities <br>of finding <u>joy</u> in München are <i>endless.</i></blockquote>
+								</div>
+							</div>
+							
+							<div class="clear"></div>
+
+						</div>
+						<div class="ipadillu"></div>
+					</div>
+				</section>
+				<section id="map">
+					<div class="container_12">
+						<div class="grid_12">
+							<h2>Map</h2>
+						</div>
+						<div class="clear"></div>
+						<div class="grid_8 prefix_2">
+							<p class="maptext">
+								<blockquote>Please choose your destination</blockquote>
+								<h4>To explore and view information about sites, activities, cuisines</h4>
+							</p>
+						</div>
+						<div class="clear"></div>
+						<div class="grid_12 mapwrap">
+							<img src="img/map/map.png" class="map">
+							<a href="#attr2"><img src="img/map/c-1.png" class="c c1"></a>
+							<a href="#activity"><img src="img/map/c-2.png" class="c c2"></a>
+							<a href="#activity"><img src="img/map/c-3.png" class="c c3"></a>
+							<a href="#attr3"><img src="img/map/c-4.png" class="c c4"></a>
+							<a href="#activity"><img src="img/map/c-5.png" class="c c5"></a>
+							<a href="#attr1"><img src="img/map/c-6.png" class="c c6"></a>
+							<a href="#apfe"><img src="img/map/c-7.png" class="c c7"></a>
+							<a href="#weis"><img src="img/map/c-8.png" class="c c8"></a>
+						</div>
+						<div class="clear"></div>
+						<div class="grid_5 mapbox">
+							<p>1 — <a href="#attr2">Nymphenburg Palace</a></p>
+							<p>2 — <a href="#activity">English Garden</a></p>
+							<p>3 — <a href="#activity">Eishbach Canal</a></p>
+							<p>4 — <a href="#attr3">Hofbrauhaus</a></p>
+							<p>5 — <a href="#activity">Oktoberfest & Viktualienmarkt</a></p>
+							<p>6 — <a href="#attr1">Frauenkirche</a></p>
+							<p>7 — <a href="#apfe">Schweinshaxe & Afpelstrudel</a></p>
+							<p>8 — <a href="#weis">Weisswurst</a></p>
+						</div>
+					</div>
+				</section>
+				<section id="attraction">
+					<div id="attr1">
+						<div class="container_12">
+							<div class="grid_12">
+								<h2>Attraction</h2>
+							</div>
+							<div class="clear"></div>
+							<div class="ipadattrblock">
+								<div class="ipadattralign">
+									<div class="grid_5">
+										<h3>Frauenkirche</h3>
+										<h4>The Cathedral Church of Our Lady</h4>
+									</div>
+									<div class="grid_6 prefix_1">
+										<p>The imagery of the Twin Towers, along with the Town Hall has long been said to define the skyline of this beautiful city.</p><br class="hide410">
+										<p><em>Address</em><br>Frauenplatz 12, 80331 München</p>
+										<br>
+										<div class="wrap">
+											<a href="#attr1more"><button class="button">Learn More</button></a>
+											<div id="attr1more" class=" modalDialog">
+										<article>
+										    <a href="#close" class="close"></a>
+										    <div class="morewrap">
+										    <h3>Frauenkirche</h3>
+										    <h4>The Cathedral Church of Our Lady</h4>
+										    <div class="desc">
+											    <div class="more1">
+												    <p>The Cathedral Church of Our Lady is definitely one of the most, if not the most, recognizable symbols of München. The imagery of the Twin Towers, along with the Town Hall has long been said to define the skyline of this beautiful city.</p>
+													<br class="hide768">
+												    <p>This gorgeous piece of architecture bears within itself many tourist attractions such as the enormous figure of St. Christopher from 1520 or the three bronze reliefs of Mother Theresa, Rupert Mayer and Kaspar Stanggassinger.</p>
+											   </div>
+										    	<a href="https://www.google.com/url?q=https://www.pexels.com/photo/architecture-bavaria-blue-building-460490/&sa=D&ust=1568435567264000&usg=AFQjCNFEtzD7n5l2Pkg4XvtU9o00vc5a6w" target="_blank"><div class="imgmore fra1"></div></a>
+											    <div class="clear"></div>
+											    <a href="https://www.google.com/url?q=https://de.wikipedia.org/wiki/Datei:Teufelstritt.jpg&sa=D&ust=1568435616090000&usg=AFQjCNEtUb1fq7qgb9syBj7wQU7kOr9VRw" target="_blank"><div class="imgmore fra4"></div></a>
+											    <div class="more2">
+											    	<p>Additionally, the most famous legend here is the Devil’s Footprint (Teufelstritt). Legend has it that this footprint-shape black mark is where the devil stood and made fun of the windowless church. Another version of the legend says that the mark was the furious footprint left by the Devil who was tricked by the church builders. He then rushed outside and turned into the ever howling wind that surrounds Frauenkirche. However the legend is, this Cathedral is a must-come attraction when visiting München.</p>
+											    </div>
+											    <div class="clear"></div>
+											    <a href="https://www.google.com/url?q=https://www.flickr.com/photos/sapphir3blu3/2741711025&sa=D&ust=1568435925252000&usg=AFQjCNE4XRS5voWnIHrSI1unUlnwcA9jBQ" target="_blank"><div class="imgmore fra3"></div></a>
+											    <div class="clear"></div>
+											</div>
+										</div>
+										</article>
+									</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="parallax2 attr1">
+							<div class="bg">
+								<div class="layerr layer-fra1"></div>
+								<div class="layerr layer-fra2"></div>
+								<div class="layerr layer-fra3"></div>
+								<div class="layerr layer-fra4"></div>
+								<div class="layerr layer-fra5"></div>
+							</div>
+							<div class="front">
+								<div class="layerr layer-fra6"></div>
+							</div>
+						</div>
+						<div class="ipadattr1"></div>
+					</div>
+					
+					<div id="attr2" >
+						<div class="container_12 attrwrap">
+							<div class="ipadattrblock">
+								<div class="ipadattralign">
+									<div class="grid_5">
+										<h3>Nymphenburg<br class="show680"> Palace</h3>
+										<h4>The Magnificent Palace of München</h4>
+									</div>
+									<div class="grid_6 prefix_1">
+										<p>Nymphenburg Palace, a palace that was built out of the love of the parents for their long-awaited newborn, is one of the most famous tourist attractions in München</p><br class="hide410">
+										<p><em>Address</em><br>Schloss Nymphenburg 1, 80638 München</p>
+										<br>
+										<div class="wrap">
+											<a href="#attr2more"><button class="button" id="more2">Learn More</button></a>
+											<div id="attr2more" class=" modalDialog">
+										<article>
+										    <a href="#close" class="close"></a>
+										    <div class="morewrap">
+										    <h3>Nymphenburg Palace</h3>
+										    <h4>The Cathedral Church of Our Lady</h4>
+										    <div class="desc">
+											    <div class="more1">
+												    <p>Nymphenburg Palace, a palace that was built out of the love of the parents for their long-awaited newborn, is one of the most famous tourist attractions in München. After being under the possession of five Wittlesback rulers, this magnificent historical and cultural site has changed a lot compared to its original form in 1662.</p>
+													<br>
+												    <p>When coming to the palace, be sure to not miss out on the elegant Nymphenburg garden, the city’s largest city garden. The garden is a harmonious combination between nature and the sophisticated touch of decoration such as many sculptures representing the gods of ancient Greece. It is a fascinating site that is perfect for an experiencing day in München.</p>
+											   </div>
+										    	<a href="https://www.google.com/url?q=https://www.flickr.com/photos/dalbera/28676531414&sa=D&ust=1568436700393000&usg=AFQjCNFrz7hNgsbYFbCl2YLiV4B1T1lJrA" target="_blank"><div class="imgmore nym1"></div></a>
+										    	<a href="https://www.google.com/url?q=https://www.needpix.com/photo/951388/castle-nymphenburg-castle-nymphenburg-nymphenburg-palace-munich-bavaria-park-water-germany&sa=D&ust=1568436680039000&usg=AFQjCNESVmFcbtW9LSEOc_xtRSimisnn5Q" target="_blank"><div class="imgmore nym2"></div></a>
+											    <div class="clear"></div>
+											    <a href="https://www.google.com/url?q=https://www.flickr.com/photos/nigel321/3734942123&sa=D&ust=1568436701215000&usg=AFQjCNGQT2sc8-fwhpcAE6FAI0u4PzmFWA" target="_blank"><div class="imgmore nym3"></div></a>
+											    <div class="clear"></div>
+											</div>
+										</div>
+										</article>
+									</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="parallax2 attr2">
+							<div class="bg">
+								<div class="layerr layer-nym1"></div>
+								<div class="layerr layer-nym2"></div>
+								<div class="layerr layer-nym3"></div>
+								<div class="layerr layer-nym4"></div>
+								<div class="layerr layer-nym5"></div>
+							</div>
+							<div class="front">
+								<div class="layerr layer-nym6"></div>
+							</div>
+						</div>
+						<div class="ipadattr2"></div>
+					</div>
+
+					<div id="attr3" >
+						<div class="container_12 attrwrap">
+							<div class="ipadattrblock">
+								<div class="ipadattralign">
+									<div class="grid_5">
+										<h3>Hofbräuhaus</h3>
+										<h4>World's largest pub</h4>
+									</div>
+									<div class="grid_6 prefix_1">
+										<p>This three-floor pub has its origin back in the 16th century and still in perfect condition to serve loyal customers that keep coming back for the good Bavarian food, incredible beer and outstanding service.</p><br class="hide410">
+										<p><em>Address</em><br>Platzl 9, 80331 München, Germany</p>
+										<br>
+										<div class="wrap">
+											<a href="#attr3more"><button class="button" id="more3">Learn More</button></a>
+											<div id="attr3more" class=" modalDialog">
+										<article>
+										    <a href="#close" class="close"></a>
+										    <div class="morewrap">
+										    <h3>Hofbräuhaus</h3>
+										    <h4>World's largest pub</h4>
+										    <div class="desc">
+											    <div class="more1">
+												    <p>If you happen to have a chance to travel to München and also have a taste and interest for beer, then Hofbräuhaus is the number one recommendation for you. This three-floor pub has its origin back in the 16th century and still in perfect condition to serve loyal customers that keep coming back for the good Bavarian food, incredible beer and outstanding service.</p>
+													<br>
+												    <p>Even if you are a non-beer-lover, this place is perfect as a tourist attraction because of how photogenic this famous brewery is. Everything in Hofbräuhaus can be an Instagram post, from the retro wood shelves to the live performing band. Whether you love beer or not, this place guarantees you a one-of-a-kind experience</p>
+											   </div>
+										    	<a href="https://www.google.com/url?q=https://en.wikipedia.org/wiki/Hofbr%25C3%25A4uhaus_am_Platzl&sa=D&ust=1568437243103000&usg=AFQjCNGIuZKLQZXmHHqBVAuxhIr9ia8n2A" target="_blank"><div class="imgmore hof1"></div></a>
+										    	<a href="https://www.google.com/url?q=https://www.flickr.com/photos/w-tommerdich/37732385866&sa=D&ust=1568437222248000&usg=AFQjCNEO7XSD0Wu0OL5dGjWFPKlhCKL_3Q" target="_blank"><div class="imgmore hof2"></div></a>
+											    <div class="clear"></div>
+											    <a href="https://www.google.com/url?q=https://commons.wikimedia.org/wiki/File:M%25C3%25BCnchen_Hofbr%25C3%25A4uhaus_Postcard_late_19th_century.jpg&sa=D&ust=1568437205890000&usg=AFQjCNHFPCZP4hbuQ3ZgyVXDBCpLDphjWw" target="_blank"><div class="imgmore hof3"></div></a>
+											    <div class="clear"></div>
+											</div>
+										</div>
+										</article>
+									</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="parallax2 attr3">
+							<div class="bg">
+								<div class="layerr layer-hof1"></div>
+								<div class="layerr layer-hof2"></div>
+								<div class="layerr layer-hof3"></div>
+								<div class="layerr layer-hof4"></div>
+							</div>
+						</div>
+						<div class="ipadattr3"></div>
+					</div>
+				</section>
+
+				<section id="activity">
+					<div class="container_12">
+						<div class="grid_12">
+							<h2>Activity</h2>
+						</div>
+						<div class="clear"></div>
+					</div>
+
+					<div class="tabs">
+						<input name="tabs" type="radio" id="tab-1" checked="checked" class="input"/>
+						<label for="tab-1" class="label"><span class="hide960">Oktoberfest</span> <span class="actsmall">Beer</span></label>
+						<div class="panel">
+							<div class="parallax actwrap act1">
+								<div class="bg hide960">
+									<div class="layer layer-3"></div>
+									<div class="layer layer-4"></div>
+									<div class="layer layer-5"></div>
+									<div class="layer layer-6"></div>
+								</div>
+								<div class="ipadacti1"></div>
+								<div class="container_12v2">
+									<div class="actcontent">
+										<p>This 204-year-old celebration of Bavarian traditions is one of the main reasons that München welcomes a large number of visitors each year.</p><br>
+										<p><em>Address</em><br>Theresienwiese, Bavariaring, 80336 München, Germany</p><br>
+										<div class="wrap">
+											<a href="#act1more"><button class="button">Learn More</button></a>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+
+						<input name="tabs" type="radio" id="tab-2" class="input"/>
+						<label for="tab-2" class="label"><span class="hide960">Get Nude in the English Garden</span> <span class="actsmall">Nude</span></label>
+						<div class="panel">
+							<!---->
+							<div class="parallax actwrap act2">
+								<div class="bg hide960">
+									<div class="layer layer-p"></div>
+									<div class="layer layer-o"></div>
+									<div class="layer layer-n"></div>
+									<div class="layer layer-m"></div>
+								</div>
+								<div class="ipadacti2"></div>
+								<div class="container_12v2">
+									<div class="actcontent">
+										<p>For comfort seekers who are looking for a restful and pleasurable afternoon in München, English Garden is the perfect spot to check out.</p><br>
+										<p><em>Address</em><br>English Garden, München, Germany</p><br>
+										<div class="wrap">
+											<a href="#act2more"><button class="button">Learn More</button></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<input name="tabs" type="radio" id="tab-3" class="input"/>
+						<label for="tab-3" class="label"><span class="hide960">Surfing at the Eisbach Canal</span> <span class="actsmall">Surf</span></label>
+						<div class="panel">
+							<!---->
+							<div class="parallax actwrap act3">
+								<div class="bg hide960">
+									<div class="layer layer-q"></div>
+									<div class="layer layer-z"></div>
+									<div class="layer layer-y"></div>
+									<div class="layer layer-x"></div>
+								</div>
+								<div class="ipadacti3"></div>
+								<div class="container_12v2">
+									<div class="actcontent">
+										<p> The waves of the Eisbach river at the opening of the English Garden has long been known as a famous spot for river surfing.</p><br>
+										<p><em>Address</em><br>Eisbach Canal, München, Germany</p><br>
+										<div class="wrap">
+											<a href="#act3more"><button class="button">Learn More</button></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<input name="tabs" type="radio" id="tab-4" class="input"/>
+						<label for="tab-4" class="label"><span class="hide960">Shop the Farmers' Market</span> <span class="actsmall">Shop</span></label>
+						<div class="panel">
+							<!---->
+							<div class="parallax actwrap act4">
+								<div class="bg hide960">
+									<div class="layer layer-d "></div>
+									<div class="layer layer-c "></div>
+									<div class="layer layer-b "></div>
+									<div class="layer layer-a "></div>
+								</div>
+								<div class="ipadacti4"></div>
+								<div class="container_12v2">
+									<div class="actcontent">
+										<p>If you want to support the local farmers and buy organic products, or simply get lost in an area that offers a wide range of experience, the Viktualienmarkt in München is where you should think of first.</p><br>
+										<p><em>Address</em><br>Viktualienmarkt 3, 80331 München</p><br>
+										<div class="wrap">
+											<a href="#act4more"><button class="button">Learn More</button></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="newacti">
+						<div class="banner oktobanner"></div>
+						<div class="block">
+							<div class="align">
+								<h3>Oktoberfest</h3>
+								<h4>The world’s largest beer festival</h4>
+								<p>This 204-year-old celebration of Bavarian traditions is one of the main reasons that München welcomes a large number of visitors each year.</p>
+								<p><em>Address</em><br>Theresienwiese, Bavariaring, 80336 München, Germany</p><br>
+								<div class="wrap">
+									<a href="#act1more"><button class="button">Learn More</button></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="banner nudebanner"></div>
+						<div class="block">
+							<div class="align">
+								<h3>Get Nude</h3>
+								<h4>In The English Garden</h4>
+								<p>For comfort seekers who are looking for a restful and pleasurable afternoon in München, English Garden is the perfect spot to check out.</p>
+								<p><em>Address</em><br>English Garden, München, Germany</p><br>
+								<div class="wrap">
+									<a href="#act2more"><button class="button">Learn More</button></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="banner surfbanner"></div>
+						<div class="block">
+							<div class="align">
+								<h3>Surf</h3>
+								<h4>At the Eisbach Canal</h4>
+								<p>The waves of the Eisbach river at the opening of the English Garden has long been known as a famous spot for river surfing.</p>
+								<p><em>Address</em><br>Eisbach Canal, München, Germany</p><br>
+								<div class="wrap">
+									<a href="#act1more"><button class="button">Learn More</button></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="banner shopbanner"></div>
+						<div class="block">
+							<div class="align">
+								<h3>Shop</h3>
+								<h4>The Farmers' Market </h4>
+								<p>If you want to support the local farmers and buy organic products, or simply get lost in an area that offers a wide range of experience, the Viktualienmarkt in München is where you should think of first.</p>
+								<p><em>Address</em><br>Viktualienmarkt 3, 80331 München</p><br>
+								<div class="wrap">
+									<a href="#act1more"><button class="button">Learn More</button></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!--lightbox for activity-->
+					<div id="act1more" class=" modalDialog">
+											<article>
+											    <a href="#close" class="close"></a>
+											    <div class="morewrap">
+											    <h3>Oktoberfest</h3>
+											    <h4>The world’s largest beer festival</h4>
+											    <div class="desc">
+												    <div class="more1">
+													    <p>The 2019 Oktoberfest is beginning on September 21st and ends on October 6th. This 204-year-old celebration of Bavarian traditions is one of the main reasons that München welcomes a large number of visitors each year. It is considered one of the world’s largest beer festival. In fact, in 2018, 7.5 millions litres of beer was poured in this one specific occasion.</p>
+														<br>
+													    <p>You can start buying beer from tents from as soon as 10AM to 10:30PM on weekdays and from 9AM to 10:30PM on the weekends. There is also a wine tent (Weinzelt) that serves 15 different types of wine as well as champagne and sparkling wine for those who want to change up their drink. But the main attraction here is the exclusively brewed beer for the festival. The beer price can be quite pricey: starting at €10.70 ($12). So be sure to save up for this one-of-a-kind festival this year.</p>
+												   </div>
+											    	<a href="https://www.google.com/url?q=http://capl.washjeff.edu/browseresults.php?langID%3D1%26photoID%3D4122%26size%3Dl&sa=D&ust=1568440753927000&usg=AFQjCNFV1GEa_Kf-D-Dxfd2edaEAGipknw" target="_blank"><div class="imgmore okto1"></div></a>
+											    	<div class="clear"></div>
+											    	<a href="https://www.google.com/url?q=https://vi.wikipedia.org/wiki/T%25E1%25BA%25ADp_tin:O%2527zapft_is!_M%25C3%25BCnchens_5_Jahreszeit_hat_begonnen_-_O%2527zapft_is!_Munich_5_season,_the_Oktoberfest_has_begun_(9855483374).jpg&sa=D&ust=1568440774815000&usg=AFQjCNGPTxJ9X17EFHmD6ses3WRaHlrUFw" target="_blank"><div class="imgmore okto2"></div></a>
+												    
+												    <a href="https://www.google.com/url?q=http://www.peakpx.com/491728/white-brown-and-blue-floral-heart-grub-vom-oktoberfest-decor&sa=D&ust=1568440794980000&usg=AFQjCNHzEgfSMwM4133QFBMf2jK3hRmwCg" target="_blank"><div class="imgmore okto3"></div></a>
+												    <div class="clear"></div>
+												    <div class="vid">
+												    	<iframe src="https://www.youtube.com/embed/Qe3orG9n5GA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+												    </div>
+												</div>
+											</div>
+											</article>
+									</div>
+					<div id="act2more" class=" modalDialog">
+										<article>
+										    <a href="#close" class="close"></a>
+										    <div class="morewrap">
+										    <h3>Get Nude</h3>
+										    <h4>In the English Garden</h4>
+										    <div class="desc">
+											    <div class="more1">
+												    <p>For comfort seekers who are looking for a restful and pleasurable afternoon in München, English Garden is the perfect spot to check out. This 3.75 km² wide piece of greenery is considered the lungs of the city and a popular site to go nude at.</p>
+													<br>
+												    <p>In 2013, the city has made it legal for citizens and tourists to come here and strip off their clothes for an afternoon snooze. Even long before the officialization of the practice, nude sunbathing is a popular practice among the Bavarians on sunshiney days in the city.</p>
+											   </div>
+										    	<a href="https://www.google.com/url?q=https://en.wikipedia.org/wiki/Hofbr%25C3%25A4uhaus_am_Platzl&sa=D&ust=1568437243103000&usg=AFQjCNGIuZKLQZXmHHqBVAuxhIr9ia8n2A" target="_blank"><div class="imgmore nude1"></div></a>
+										    	<div class="clear"></div>
+										    	<a href="https://www.google.com/url?q=https://www.flickr.com/photos/w-tommerdich/37732385866&sa=D&ust=1568437222248000&usg=AFQjCNEO7XSD0Wu0OL5dGjWFPKlhCKL_3Q" target="_blank"><div class="imgmore nude2"></div></a>
+										    	<div class="more2 more2position">
+											    	<p>You can get naked in specific spots in the park: two spots at the southern part along the Isar River, South-western part of Feldmoching Lake, a Northern section of the Englischer Garten and Isar Island Oberfö Hring in the northern part of Isar River. Just be sure to not take out your camera. Though not forbidden, a camera in such a sensitive place can be commonly frowned upon.</p>
+											    </div>
+											    <div class="clear"></div>
+											    <a href="https://www.google.com/url?q=https://commons.wikimedia.org/wiki/File:M%25C3%25BCnchen_Hofbr%25C3%25A4uhaus_Postcard_late_19th_century.jpg&sa=D&ust=1568437205890000&usg=AFQjCNHFPCZP4hbuQ3ZgyVXDBCpLDphjWw" target="_blank"><div class="imgmore nude3"></div></a>
+											    <div class="clear"></div>
+											</div>
+										</div>
+										</article>
+									</div>
+					<div id="act3more" class=" modalDialog">
+										<article>
+										    <a href="#close" class="close"></a>
+										    <div class="morewrap">
+										    <h3>Surfing</h3>
+										    <h4>At the Eisbach Canal</h4>
+										    <div class="desc">
+											    <div class="more1">
+												    <p>Those who are sports fans or visitors interested in surfing can be assured to find those alike at this attraction. The waves of the Eisbach river at the opening of the English Garden has long been known as a famous spot for river surfing. </p>
+													<br>
+												    <p>The practice of river surfing starts very early in the morning. While the rest of the park is still in silent, you can be sure that at this specific location, several surfers are lining up to surf on the waves of this river. Not until 20 years ago was this practice made legal; however, this site has long been a famous surfing spot since 40 years ago.</p>
+												    <br>
+												    <p>Even if you are not a surfer yourself, nowadays, you are welcome to come and watch as the surfers ride on the waves and create outstanding surfing stunts.</p>
+											   </div>
+										    	<a href="https://www.google.com/url?q=https://mpora.com/surfing/welcome-to-the-eisbach-the-secret-munich-river-surfing-scene-turned-global-sensation&sa=D&ust=1568467284528000&usg=AFQjCNHI_zqyMwWj6ptIEymeb9INu689dQ" target="_blank"><div class="imgmore surf1"></div></a>
+											    
+											    <a href="https://www.google.com/url?q=https://commons.wikimedia.org/wiki/File:Eisbachbruecke_Prinzregentenstr._Muenchen-3.jpg&sa=D&ust=1568467301838000&usg=AFQjCNFJxdT8QHybv0PJCvj2H1WiIOXtuQ" target="_blank"><div class="imgmore surf2"></div></a>
+											    
+											    <div class="clear"></div>
+											    <a href="hhttps://www.google.com/url?q=https://de.wikipedia.org/wiki/Datei:Eisbach_die_Welle_Surfer.JPG&sa=D&ust=1568467319274000&usg=AFQjCNGQbaK8bhBFRzIutKHIhVnpOjq7cQ" target="_blank"><div class="imgmore surf3"></div></a>
+											    <div class="clear"></div>
+											</div>
+										</div>
+										</article>
+									</div>
+					<div id="act4more" class=" modalDialog">
+										<article>
+										    <a href="#close" class="close"></a>
+										    <div class="morewrap">
+										    <h3>Shop</h3>
+										    <h4>The Farmers' Market</h4>
+										    <div class="desc">
+											    <div class="more1">
+												    <p>If you want to support the local farmers and buy organic products, or simply get lost in an area that offers a wide range of experience, the Viktualienmarkt in München is where you should think of first.</p>
+													<br>
+												    <p>The Victuals Market has 140 stalls and booths that feature abundant products: from exotic flowers and fruits to freshly squeezed juice. Originating from a mere local farmers’ market, Viktualienmarkt raised to become a common meeting point that has hosted abundants events such as brewers’ day, gardeners’ day or a summer festival.</p>
+												    <br>
+												    <p>This local site is well known to many tourists for its organic and friendly nature. Even if you are not planning on buying anything from the stalls, a walk in the Viktualienmarkt guarantees a pleasurable experience in München. </p>
+											   </div>
+										    	<a href="https://www.google.com/url?q=https://commons.wikimedia.org/wiki/File:Obst%2526Gem%25C3%25BCse_-_Viktualienmarkt_in_M%25C3%25BCnchen.jpg&sa=D&ust=1568468165100000&usg=AFQjCNEHZf1qSPI0kiqHczviB226xXGlHg" target="_blank"><div class="imgmore shop1"></div></a>
+											    
+											    <a href="https://www.google.com/url?q=https://www.needpix.com/photo/1286382/maypole-sky-munich-viktualienmarkt-tradition-free-photos-free-images&sa=D&ust=1568468184179000&usg=AFQjCNHHf-MQ0T5NTdbdM5oA4-N6dRawsw" target="_blank"><div class="imgmore shop2"></div></a>
+											    
+											    <div class="clear"></div>
+											    <a href="https://www.google.com/url?q=https://www.flickr.com/photos/beerskittles/9539379807&sa=D&ust=1568468181747000&usg=AFQjCNFiFW2srxZlXOnBLfbOFWOcSqSrNg" target="_blank"><div class="imgmore shop3"></div></a>
+											    <div class="clear"></div>
+											</div>
+										</div>
+										</article>
+									</div>
+				</section>
+				<section id="cuisine">
+					<div class="container_12">
+						<div class="grid_12">
+							<h2>Cuisine</h2>
+						</div>
+						<div class="clear"></div>
+						
+						<div id="dish1" class="grid_6 dish dish1"></div>
+						<div class="grid_5 prefix_1 clearfix">
+							<h3 id="weis">Weisswurst </h3>
+							<h4>White sausage</h4>
+							<p class="desc">Weisswurst, which can be literally translated to ‘White sausage’, is a traditional dish of the Bavarian made from minced veal meat and pork. According to a legend, it was created due to a mistake when one innkeeper ran out of sheep casings and used pork casings in replacement.</p>
+							<div class="cuisinebox">
+								<p><em>Ingredients</em><br>Lean veal meat, Lean pork, Pork fat, Dried lemon skin, White pepper, Dried ginger, Freshly grated cardamom, Dried mace, Onion, Parsley, Sausage casings</p><br class="hide580">
+								<p><em>Place To Try</em><br>Gaststatte Grossmarkthalle — Kochelseestr. 13, 81371 Munich</p><br class="hide580">
+								<p><em>Price Range</em><br>€ 9.07 - 28.14</p>
+							</div>
+						</div>
+						
+						<div class="clear"></div>
+						<div class="grid_6 push_6 dish dish2 newpaddingdish"></div>
+						<div class="grid_5 pull_6 suffix_1 newpadding2">
+							<h3 id="apfe">Apfelstrudel</h3>
+							<h4>Apple strudel</h4>
+							<p class="desc">Though having its origin in Vienna, Apfelstrudel is a variant that is widely loved and enjoyed in Munich. The flaky and sweet pastry is perfect for everyone who has a sweet tooth when they come to this city.</p>
+							<div class="cuisinebox">
+								<p><em>Ingredients</em><br>Apple, Puff pastry, Brown sugar, Golden raisin, Egg, Milk</p><br class="hide580">
+								<p><em>Place To Try</em><br>Wirtshaus Zum Straubinger — Blumenstr. 5, 80331 Munich</p><br class="hide580">
+								<p><em>Price Range</em><br>€ 8.17 - 34.55</p>
+							</div>
+						</div>
+						
+						<div class="clear"></div>
+						<div class="grid_6 dish dish3 "></div>
+						<div class="grid_5 prefix_1 ">
+							<h3 id="pork">Schweinshaxe</h3>
+							<h4>German pork knuckle</h4>
+							<p class="desc">Schweinshaxe is tender and juicy pork knuckle wrapped in a roasted-crispy skin. The dish is a great way to compliment the taste of your favourite beer at Oktoberfest</p>
+							<div class="cuisinebox cuisineboxlast">
+								<p><em>Ingredients</em><br>Pork hock, Garlic, Onion, Beer, Potatoes and cabbage variations (side dish)</p><br class="hide580">
+								<p><em>Place To Try</em><br>Wirtshaus Zum Straubinger — Blumenstr. 5, 80331 München</p><br class="hide580">
+								<p><em>Price Range</em><br>€ 8.18 - 34.54</p>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</section>
+				<section id="accomodation">
+					<div class="container_12">
+						<div class="grid_12">
+							<h2>Accomodation</h2>
+						</div>
+						<div class="clear"></div>
+						
+						<div class="accomwrap">
+							<div class="accombox ">
+								<input id="rad1" type="radio" name="rad" checked>
+									<article>
+										<figure class="thumbnail">
+											<img src="img/accom/cor/b.png">
+										</figure>
+										<div class="accomcontent">
+											<h3>Cordula</h3>
+											<div class="rate">
+												<span class="star">5.0</span>
+											</div>
+											<p class="desc">Located in a more distinct spot in a small hidden valley, Cordula’s cozy house still offers five-star staying experience with its beautifully decorated space and the cozy and warm feeling that its host provides. The 80-year-old’s single house features lots of sunset-colour wood furniture that looks like they come straight out of a fairytale. You can still access to various famous places using public transport that are near to the location.</p>
+											<br>
+											<p><em>Price</em><br>$83 per night</p><br class="hide410"><span class="inv">a</span>
+											<br class="hide410">
+											<div class="wrap">
+												<a href="https://www.airbnb.com/rooms/199066?adults=1&source_impression_id=p3_1567758585_ZbIm%2Bqv6dpADVXt2 " target="_blank"><button class="button">Learn More</button></a>
+											</div>
+										</div>
+										<label for="rad3">Prev</label>
+										<label for="rad2">Next</label>
+									</article>
+
+									<input id="rad2" type="radio" name="rad">
+									<article>
+										<figure class="thumbnail">
+											<img src="img/accom/maria/a.png">
+										</figure>
+										<div class="accomcontent">
+											<h3>Maria</h3>
+											<div class="rate">
+												<span class="star">5.0</span>
+											</div>
+											<p class="desc">With a very comfortable bed, fancy bathroom, wardrobe and a workplace, Maria’s Loft offers a perfect stay for romantic couples and also comfort seeking individuals. The old and cozy feeling of the space is complemented by the honey-colored old wood parquet and beautiful cuts, making the house simple, yet attractive. The place is at the center of München, close to restaurants, bars, a bakery/ grocery store, Oktoberfest and also the Viktualienmarkt.</p>
+											<br>
+											<p><em>Price</em><br>$55 per night</p>
+											<br>
+											<div class="wrap">
+												<a href="https://www.airbnb.com/rooms/33029777?adults=1&source_impression_id=p3_1567758599_J7JPuBp%2B1%2F1Sfxf0" target="_blank"><button class="button">Learn More</button></a>
+											</div>
+										</div>
+										<label for="rad1">Prev</label>
+										<label for="rad3">Next</label>
+									</article>
+
+									<input id="rad3" type="radio" name="rad">
+									<article>
+										<figure class="thumbnail">
+											<img src="img/accom/stef/a.png">
+										</figure>
+										<div class="accomcontent">
+											<h3>Stefan</h3>
+											<div class="rate">
+												<span class="star">4.3</span>
+											</div>
+											<p class="desc">Fully equipped kitchen and bathroom along with high-quality furniture make Stefan’s hub a decent choice for stay with reasonable price. Minimally designed and decorated, this airbnb aims at being efficient, modern but also beautiful and attractive. It is located in Ramersdorf Perlach, München’s largest district; hence its being near to several transportation choices, stores and services. Overall, this place offers quality staying experience for those looking to stay somewhere modern and minimal.</p>
+											<br>
+											<p><em>Price</em><br>$52 per night</p>
+											<br>
+											<div class="wrap">
+												<a href="https://www.airbnb.com/rooms/32589524?adults=1&source_impression_id=p3_1567758596_7dh5wc2dfHE2BezQ" target="_blank"><button class="button">Learn More</button></a>
+											</div>
+										</div>
+										<label for="rad2">Prev</label>
+										<label for="rad1">Next</label>
+									</article>
+
+									<div class="clear"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			
+			<section id="contact">
+				<div class="container_12">
+					<div class="grid_12">
+						<h2>Contact</h2>
+					</div>
+					<div class="clear"></div>
+					<div class="grid_4">
+						<h3>Address</h3>
+						<p>RMIT University</p>
+						<br>
+						<h3>Email</h3>
+						<p><a href="mailto:neonsocks@gmail.com" class="link">neonsocks@gmail.com</a></p>
+					</div>
+					<div class="grid_7 prefix_1">
+						<div class="contactbox">
+							<form action="#" autocomplete="off">
+							    <fieldset>
+							      <input id="first" type="text" name="first" required>
+							      <label for="first">Name</label>
+							      <div class="after"></div>
+							    </fieldset>
+							    <fieldset>
+							      <input id="last" type="text" name="last" required>
+							      <label for="last">Email</label>
+							      <div class="after"></div>
+							    </fieldset>
+							    <fieldset>
+							      <input id="last" type="text" name="last" required>
+							      <label for="last">Subject</label>
+							      <div class="after"></div>
+							    </fieldset>
+							    <fieldset>
+							    	<textarea id="last" name="message" class="form-control" required></textarea>
+							    	<label for="last">Message</label>
+							    	<div class="after"></div>
+							    </fieldset>
+							    
+							  </form>
+							  <button class="button">Send</button>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</section>
+			</main>
+			<footer>
+				<a href="#" title="Scroll to Top"><img src="img/logo.png" width="540px" class="logotext"></a>
+				<a href="#" title="Scroll to Top" class="logoface"><img src="img/logo2.png"></a>
+			</footer>
+		</div>
+
+		<script>
+			const elems = document.querySelectorAll('.parallax');
+const layer2 = document.querySelector('.layer-2');
+const layer3 = document.querySelector('.layer-3');
+const layer4 = document.querySelector('.layer-4');
+const layer5 = document.querySelector('.layer-5');
+const layer6 = document.querySelector('.layer-6');
+const layer7 = document.querySelector('.layer-7');
+const layer8 = document.querySelector('.layer-8');
+
+const layera = document.querySelector('.layer-a');
+const layerb = document.querySelector('.layer-b');
+const layerc = document.querySelector('.layer-c');
+const layerd = document.querySelector('.layer-d');
+
+const layerx = document.querySelector('.layer-x');
+const layery = document.querySelector('.layer-y');
+const layerz = document.querySelector('.layer-z');
+const layerq = document.querySelector('.layer-q');
+
+const layerm = document.querySelector('.layer-m');
+const layern = document.querySelector('.layer-n');
+const layero = document.querySelector('.layer-o');
+const layerp = document.querySelector('.layer-p');
+
+const layerfra1 = document.querySelector('.layer-fra1');
+const layerfra2 = document.querySelector('.layer-fra2');
+const layerfra3 = document.querySelector('.layer-fra3');
+const layerfra4 = document.querySelector('.layer-fra4');
+const layerfra5 = document.querySelector('.layer-fra5');
+const layerfra6 = document.querySelector('.layer-fra6');
+
+const layernym1 = document.querySelector('.layer-nym1');
+const layernym2 = document.querySelector('.layer-nym2');
+const layernym3 = document.querySelector('.layer-nym3');
+const layernym4 = document.querySelector('.layer-nym4');
+const layernym5 = document.querySelector('.layer-nym5');
+const layernym6 = document.querySelector('.layer-nym6');
+
+const layerhof1 = document.querySelector('.layer-hof1');
+const layerhof2 = document.querySelector('.layer-hof2');
+const layerhof3 = document.querySelector('.layer-hof3');
+const layerhof4 = document.querySelector('.layer-hof4');
+
+
+setTimeout(function () {
+    elems.forEach(function (elem, index) {
+        elem.style.animation = "none";
+    });
+}, 1500);
+
+
+
+document.body.addEventListener('mousemove', function (e) {
+    if (!e.currentTarget.dataset.triggered) {
+        elems.forEach(function (elem, index) {
+            if (elem.getAttribute('style')) {
+                elem.style.transition = "all .5s";
+                elem.style.transform = "none";
+            }
+        });
+    }
+    e.currentTarget.dataset.triggered = true;
+    
+    let width = window.innerWidth / 2;
+    let mouseMoved2 = ((width - e.pageX) / 50);
+    let mouseMoved3 = ((width - e.pageX) / 40);
+    let mouseMoved4 = ((width - e.pageX) / 30);
+    let mouseMoved5 = ((width - e.pageX) / 20);
+    let mouseMoved6 = ((width - e.pageX) / 10);
+    let mouseMoved7 = ((width - e.pageX) / 5);
+
+    layer3.style.transform = "translateX(" + mouseMoved2 + "px)";
+    layer4.style.transform = "translateX(" + mouseMoved3 + "px)";
+    layer5.style.transform = "translateX(" + mouseMoved4 + "px)";
+    layer6.style.transform = "translateX(" + mouseMoved5 + "px)";
+
+    layerd.style.transform = "translateX(" + mouseMoved2 + "px)";
+    layerc.style.transform = "translateX(" + mouseMoved3 + "px)";
+    layerb.style.transform = "translateX(" + mouseMoved4 + "px)";
+    layera.style.transform = "translateX(" + mouseMoved5 + "px)";
+
+    layerq.style.transform = "translateX(" + mouseMoved2 + "px)";
+    layerz.style.transform = "translateX(" + mouseMoved3 + "px)";
+    layery.style.transform = "translateX(" + mouseMoved4 + "px)";
+    layerx.style.transform = "translateX(" + mouseMoved5 + "px)";
+
+    layerp.style.transform = "translateX(" + mouseMoved2 + "px)";
+    layero.style.transform = "translateX(" + mouseMoved3 + "px)";
+    layern.style.transform = "translateX(" + mouseMoved4 + "px)";
+    layerm.style.transform = "translateX(" + mouseMoved5 + "px)";
+
+    layerfra1.style.transform = "translateX(" + mouseMoved2 + "px)";
+    layerfra2.style.transform = "translateX(" + mouseMoved3 + "px)";
+    layerfra3.style.transform = "translateX(" + mouseMoved4 + "px)";
+    layerfra4.style.transform = "translateX(" + mouseMoved5 + "px)";
+    layerfra5.style.transform = "translateX(" + mouseMoved6 + "px)";
+    layerfra6.style.transform = "translateX(" + mouseMoved7 + "px)";
+
+    layernym1.style.transform = "translateX(" + mouseMoved2 + "px)";
+    layernym2.style.transform = "translateX(" + mouseMoved3 + "px)";
+    layernym3.style.transform = "translateX(" + mouseMoved4 + "px)";
+    layernym4.style.transform = "translateX(" + mouseMoved5 + "px)";
+    layernym5.style.transform = "translateX(" + mouseMoved6 + "px)";
+    layernym6.style.transform = "translateX(" + mouseMoved7 + "px)";
+
+    layerhof1.style.transform = "translateX(" + mouseMoved2 + "px)";
+    layerhof2.style.transform = "translateX(" + mouseMoved3 + "px)";
+    layerhof3.style.transform = "translateX(" + mouseMoved4 + "px)";
+    layerhof4.style.transform = "translateX(" + mouseMoved5 + "px)";
+
+    layer7.style.transform = "translateX(" + mouseMoved6 + "px)";
+    layer8.style.transform = "translateX(" + mouseMoved7 + "px)";
+});
+
+document.body.addEventListener('mouseleave', function (e) {
+    elems.forEach(function (elem, index) {
+        elem.style.transition = "all .5s";
+        elem.style.transform = "none";
+    });
+});
+
+document.body.addEventListener('mouseenter', function (e) {
+    elems.forEach(function (elem, index) {
+        setTimeout(function () {
+            elem.style.transition = "none";
+        }, 500);
+    });
+});
+		</script>
+
+		<!--dropcap-->
+		<script>
+			function switchsize(state) {
+			if (state.matches) {
+			window.Dropcap.layout(dropcap, 2);
+			} else {
+			window.Dropcap.layout(dropcap, 3); }
+			}
+
+			var dropcap = document.getElementById("dropcap");
+			window.Dropcap.layout(dropcap, 3);
+
+			var narrow = window.matchMedia("screen and (max-width: 410px)");
+			narrow.addListener(switchsize);
+			switchsize(narrow);	
+		</script>
+
+	</body>
+</html>
